@@ -1,15 +1,16 @@
-## Welcome to GitHub Pages
+## About Me
 
-You can use the [editor on GitHub](https://github.com/APradyut/apradyut.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+You can use the [editor on GitHub](https://github.com/APradyut/adarshpradyut.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+I am a Entrepreneurial Software Developer working in Bengaluru, India. I always want to solve problems with code and make an impact on the customers by making their lives easier. I believe that being a good programmer is not just about knowing the latest languages and frameworks but it is to solutionize the problems using the best available technology and keeping in mind the cost and feasibility.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### My Skills
 
-```markdown
-Syntax highlighted code block
+| C#, C++       | Node JS   | Vue JS        | REST, gRPC    |
+| .NET Core     | ASP .NET  | JWT           | JSON, XML     |
+| Microservices | Rabbit MQ | Kubernetes    | Docker        |
 
 # Header 1
 ## Header 2
@@ -28,10 +29,8 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Adarsh Pradyut
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/APradyut/apradyut.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
