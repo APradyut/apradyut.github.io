@@ -30,6 +30,15 @@
     width: 100%;
 }
 
+.footer-box {
+    background: linear-gradient(to bottom,#66ccff 0%,  #0066ff 100%) !important;
+    color: white;
+    margin-top: 0px !important;
+    padding: 20px;
+    height: 15em;
+    width: 100%;
+}
+
 .menu-box {
     border-top: 1px solid #34b1eb;
     background: #66ccff;
@@ -53,6 +62,10 @@
     margin-top: 10px;
 }
 
+.top-margin-30 {
+    margin-top: 30px;
+}
+
 .title {
     font-weight: 500;
     color: #34d0eb;
@@ -74,4 +87,8 @@ h3 {
 
 .pointer{
     cursor: pointer;
+}
+
+.small-text{
+    font-size: small;
 }
