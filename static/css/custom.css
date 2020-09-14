@@ -1,94 +1,106 @@
 .profile-img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .vertical-center {
-    margin-top: auto;
-    margin-bottom: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .box {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #F5F5F5;
-    padding: 10px;
-    border-radius: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .right-box {
-    border-left: 1px solid #34b1eb;
+  border-left: 1px solid #34b1eb;
 }
 
 .heading-box {
-    background: linear-gradient(to bottom, #0066ff 0%, #66ccff 100%) !important;
-    color: white;
-    margin-top: 0px !important;
-    padding: 20px;
-    height: 15em;
-    width: 100%;
+  background: linear-gradient(to bottom, #0066ff 0%, #66ccff 100%) !important;
+  color: white;
+  margin-top: 0px !important;
+  padding: 20px;
+  height: 15em;
+  width: 100%;
 }
 
 .footer-box {
-    background: linear-gradient(to bottom,#66ccff 0%,  #0066ff 100%) !important;
-    color: white;
-    margin-top: 0px !important;
-    padding: 20px;
-    height: 15em;
-    width: 100%;
+  background: linear-gradient(to bottom, #66ccff 0%, #0066ff 100%) !important;
+  color: white;
+  margin-top: 0px !important;
+  padding: 20px;
+  height: 15em;
+  width: 100%;
 }
 
 .menu-box {
-    border-top: 1px solid #34b1eb;
-    background: #66ccff;
-    color: white;
-    margin-top: 0px !important;
-    padding: 10px;
-    height: 3em;
-    margin-bottom: 10px !important;
-    width: 100%;
+  border-top: 1px solid #34b1eb;
+  background: #66ccff;
+  color: white;
+  margin-top: 0px !important;
+  padding: 10px;
+  height: 3em;
+  margin-bottom: 10px !important;
+  width: 100%;
 }
 
 .left-margin-4em {
-    margin-left: 4em;
+  margin-left: 4em;
 }
 
 .padding-right-50px {
-    padding-right: 50px;
+  padding-right: 50px;
 }
 
 .top-margin-10 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .top-margin-30 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .title {
-    font-weight: 500;
-    color: #34d0eb;
+  font-weight: 500;
+  color: #34d0eb;
 }
 
 .sub-title {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .previous-title {
-    font-style: italic;
-    font-size: small;
-    color: #34d0eb;
+  font-style: italic;
+  font-size: small;
+  color: #34d0eb;
 }
 
 h3 {
-    color: #34b1eb;
+  color: #34b1eb;
 }
 
-.pointer{
-    cursor: pointer;
+.pointer {
+  cursor: pointer;
 }
 
-.small-text{
-    font-size: small;
+.pointerLink {
+  cursor: pointer;
+  color: #0066ff;
+}
+
+.small-text {
+  font-size: small;
+}
+
+.articleBox {
+  border-right: 1px solid lightgray;
+  margin-left: 20px;
+  padding: 20px;
+  overflow: stretch;
 }
