@@ -1,0 +1,194 @@
+/* General area */
+.page {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto repeat(5, auto) auto;
+  width: 100%;
+  height: 100%;
+}
+
+.data-area {
+  margin: 20px 10%;
+}
+
+.pointerLink {
+  cursor: pointer;
+  color: #0066ff;
+}
+
+/* Header specific area */
+.header {
+  background: linear-gradient(to bottom, #0066ff 0%, #66ccff 100%) !important;
+  color: white;
+}
+
+/* Content specific area */
+.content-header {
+  color: #34b1eb;
+  font-size: 1.75em;
+}
+
+.content:nth-child(odd) {
+  background: #eee;
+}
+
+.content-data {
+  margin: 10px;
+  font-size: 1em;
+}
+
+.article-data {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-gap: 10px;
+}
+
+.article-title {
+  font-weight: 500;
+  color: #34d0eb;
+}
+
+.article {
+  padding: 5px;
+  border-right: 1px solid black;
+}
+
+.article:nth-last-child(1) {
+  border-right: 0px solid black;
+}
+
+.article-sub-title {
+  font-style: italic;
+  color: #34d0eb;
+}
+
+.article-link {
+  font-weight: 400;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: 4fr 7fr;
+  grid-template-rows: 100%;
+}
+.experience-title {
+  margin-left: 10px;
+  color: #34d0eb;
+}
+.experience-company {
+  color: black;
+  display: block;
+}
+.skills-data {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: repeat(5, 30px);
+  grid-gap: 5px;
+  justify-items: center;
+  width: 100%;
+  margin: 10px;
+}
+.certification-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 5px;
+  margin: 10px;
+}
+/* Footer specific area */
+.footer {
+  background: linear-gradient(to bottom, #66ccff 0%, #0066ff 100%) !important;
+  color: white;
+}
+
+/* Timeline*/
+* {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #34b1eb;
+  top: 0;
+  bottom: 0;
+  margin-left: 30px;
+}
+
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  margin-left: 4px;
+}
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 4px solid #34d0eb;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  left: 5px;
+}
+
+/* Place the container to the left */
+.left {
+  left: 10px;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
