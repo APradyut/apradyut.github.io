@@ -129,3 +129,7 @@ h3 {
 .lastname {
   font-size: 3em;
 }
+
+button {
+  background: white;
+}
