@@ -7,80 +7,81 @@
   <link rel="stylesheet" href="./static/css/timeline.css" />
   <link rel="stylesheet" href="./static/css/custom.css" />
   <link rel="stylesheet" href="./static/css/style.css" />
+  <script src="./common.js"></script>
   <meta name="theme-color" content="#0066ff" />
   <meta name="description" content="Adarsh Pradyut - Online profile">
   <meta name="keywords" content="Adarsh Pradyut, Resume, APradyut">
   <meta name="author" content="Adarsh Pradyut">
 </head>
 
-<body style="background-color: #d8d8d8">
+<body style="background-color: #d8d8d8" onload="documentOnload()">
   <div class="page">
+    <div class="download-resume-button">
+      <button onclick="downloadResume()" class="btn btn-light pointer">
+        <img height="30px" width="30px" src="./static/Images/download.png" />
+      </button>
+    </div>
+
     <div class="header">
       <div class="data-area">
         <div class="header-data-area">
-          <div class="vertical-center text-left">
-            <img class="profile-img" src="./static/Images/profile-pic.jpg" />
-          </div>
-          <div class="vertical-center text-center">
-            <div class="header-center-details">
-              <div class="header-text">
-                <div>
-                  <span class="firstname">
-                    Adarsh
-                  </span>
-                  <span class="lastname">
-                    Pradyut
-                  </span>
-                </div>
-                <p>
-                  <span class="pointer" onclick="window.open('mailto://hello@adarshpradyut.in','_blank')">
-                    hello@adarshpradyut.in
-                  </span>
-                  | +91 9962256589
-                </p>
-              </div>
+          <div class="header-center-details text-center">
+            <div class="header-text">
               <div>
-                <button onclick="window.open('https://medium.com/@adarsh.pradyut','_blank')"
-                  class="btn btn-light pointer">
-                  <img height="30px" width="30px" src="./static/Images/medium_logo.png" />
-                </button>
+                <span class="firstname">
+                  Adarsh
+                </span>
+                <span class="lastname">
+                  Pradyut
+                </span>
               </div>
-              <div>
-                <button onclick="window.open('https://www.youtube.com/channel/UC6oqmFqlYhQ30t_885P8KZw','_blank')"
-                  class="btn btn-light pointer">
-                  <img height="30px" width="30px" src="./static/Images/youtube_logo.png" />
-                </button>
-              </div>
-              <div>
-                <button onclick="window.open('https://www.linkedin.com/in/adarshpradyut/','_blank')"
-                  class="btn btn-light pointer">
-                  <img height="30px" width="30px" src="./static/Images/linkedin.png" />
-                </button>
-              </div>
-              <div>
-                <button onclick="window.open('https://github.com/APradyut','_blank')"
-                  class="btn btn-light pointer">
-                  <img height="30px" width="30px" src="./static/Images/github.png" />
-                </button>
-              </div>
-              <div>
-                <button onclick="window.open('https://www.nuget.org/packages?q=apradyut','_blank')"
-                  class="btn btn-light pointer">
-                  <img height="30px" width="30px" src="./static/Images/nuget.png" />
-                </button>
-              </div>
+              <p>
+                <span class="pointer" onclick="window.open('mailto://hello@adarshpradyut.in','_blank')">
+                  hello@adarshpradyut.in
+                </span>
+                | +91 9962256589
+              </p>
             </div>
+            <div>
+              <button onclick="window.open('https://medium.com/@adarsh.pradyut','_blank')"
+                class="btn btn-light pointer">
+                <img height="30px" width="30px" src="./static/Images/medium_logo.png" />
+              </button>
+            </div>
+            <div>
+              <button onclick="window.open('https://www.youtube.com/channel/UC6oqmFqlYhQ30t_885P8KZw','_blank')"
+                class="btn btn-light pointer">
+                <img height="30px" width="30px" src="./static/Images/youtube_logo.png" />
+              </button>
+            </div>
+            <div>
+              <button onclick="window.open('https://www.linkedin.com/in/adarshpradyut/','_blank')"
+                class="btn btn-light pointer">
+                <img height="30px" width="30px" src="./static/Images/linkedin.png" />
+              </button>
+            </div>
+            <div>
+              <button onclick="window.open('https://github.com/APradyut','_blank')" class="btn btn-light pointer">
+                <img height="30px" width="30px" src="./static/Images/github.png" />
+              </button>
+            </div>
+            <div>
+              <button onclick="window.open('https://www.nuget.org/packages?q=apradyut','_blank')"
+                class="btn btn-light pointer">
+                <img height="30px" width="30px" src="./static/Images/nuget.png" />
+              </button>
+            </div>
+          </div>
 
-          </div>
-          <div class="vertical-center text-right">
-            <img width="200px" height="200px" src="./static/Images/bot.png" />
-          </div>
         </div>
       </div>
     </div>
     <div class="content">
-      <div class="data-area">
-        <div class="content-header">
+      <div class="data-area aboutme-header-data">
+        <div class="profile-img-container vertical-center text-right">
+          <img class="profile-img" src="./static/Images/profile-pic.jpg" />
+        </div>
+        <div class="content-header aboutme-content-header">
           About me
         </div>
         <div class="content-data">
@@ -103,7 +104,8 @@
           <div class="article">
             <div class="article-title">S.O.L.I.D Principles</div>
             <div class="article-sub-title">What is the S.O.L.I.D Principle?</div>
-            We all have faced the problem of changing requirements...
+            We all have faced the problem of changing requirements and short deadlines in an Agile environment. It can
+            become quite cumbersome at times when the application does not follow proper design patterns...
             <div>
               <span class="article-link pointerLink"
                 onclick="window.open('https://medium.com/@adarsh.pradyut/s-o-l-i-d-principle-bc7449bdf650?source=friends_link&sk=0f50300d0909e7082107c92879d9d3c6','_blank')">
@@ -114,7 +116,8 @@
           <div class="article">
             <div class="article-title">IP bound JWT</div>
             <div class="article-sub-title">Are IP Address bound JWT more secure?</div>
-            An IP address bound JSON Web Token (JWT) is a token which is...
+            An IP address bound JSON Web Token (JWT) is a token which is constraint to a particular IP address — in most
+            cases the IP which requested the token. These tokens are bounded....
             <div>
               <span class="article-link pointerLink"
                 onclick="window.open('https://medium.com/@adarsh.pradyut/ip-bound-jwt-6e2669d15391?source=friends_link&sk=4dc7ef07a085a008736ac86308cd06c6','_blank')">
@@ -133,10 +136,13 @@
         <div class="timeline">
           <div class="timeline-container left">
             <div class="experience">
+              <div>
+                <img class="company-logo" src="./static/Images/Company/stradus.jpg" />
+              </div>
               <div class="experience-title">
-                R&D Software Engineer <br />(Sept 2020 - Present)
+                Stradus
                 <span class="experience-company">
-                  Stradus
+                  R&D Software Engineer <br />(Sept 2020 - Present)
                 </span>
               </div>
 
@@ -148,16 +154,21 @@
           </div>
           <div class="timeline-container left row">
             <div class="experience">
+              <div>
+                <img class="company-logo" src="./static/Images/Company/inszoom.png" />
+              </div>
               <div class="experience-title">
-                Product Engineer<br /> (July 2020 - Sept 2020)
-                <div class="article-sub-title">
-                  Product Engineer Trainee<br /> (July 2019 - July 2020)
-                </div>
-                <div class="article-sub-title">
-                  Product Engineer Intern <br />(Jan 2019 - July 2019)
-                </div>
+                INSZoom
+
+
                 <span class="experience-company">
-                  INSZoom
+                  Product Engineer<br /> (July 2020 - Sept 2020)
+                  <div class="article-sub-title">
+                    Product Engineer Trainee<br /> (July 2019 - July 2020)
+                  </div>
+                  <div class="article-sub-title">
+                    Product Engineer Intern <br />(Jan 2019 - July 2019)
+                  </div>
                 </span>
               </div>
 
@@ -170,10 +181,15 @@
           </div>
           <div class="timeline-container left row">
             <div class="experience">
+              <div>
+                <img class="company-logo" src="./static/Images/Company/closerlook.png" />
+              </div>
               <div class="experience-title">
-                Web Application Developer Intern<br /> (Jan 2018 - Jan 2019)
+                CloserLook Digital Software Services
+
                 <span class="experience-company">
-                  CloserLook Digital Software Services
+                  Web Application Developer Intern<br /> (Jan 2018 - Jan 2019)
+
                 </span>
               </div>
 
@@ -187,10 +203,15 @@
           </div>
           <div class="timeline-container left row">
             <div class="experience">
+              <div>
+                <img class="company-logo company-logo-top-heavy" src="./static/Images/Company/team1p618.jpg" />
+              </div>
               <div class="experience-title">
-                Director Coding - IoT<br /> (May 2016 - Jan 2018)
+                Team 1.618
+
                 <span class="experience-company">
-                  Team 1.618
+                  Director Coding - IoT<br /> (May 2016 - Jan 2018)
+
                 </span>
               </div>
 
@@ -203,10 +224,15 @@
           </div>
           <div class="timeline-container left row">
             <div class="experience">
+              <div>
+                <img class="company-logo company-logo-top-heavy" src="./static/Images/Company/sourcepro.png" />
+              </div>
               <div class="experience-title">
-                Software Development Intern <br />(June 2017)
+                SourcePro Infotech
+
                 <span class="experience-company">
-                  SourcePro Infotech
+                  Software Development Intern <br />(June 2017)
+
                 </span>
               </div>
 
@@ -228,63 +254,229 @@
         <div class="skills-data">
           <div class="skill">
             C#, C++
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             Node JS
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             Vue JS
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+          <div class="skill">
+            CSS Grid
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             .NET Core
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             ASP .NET
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             Microservices
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot "></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             JWT
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+            </div>
           </div>
           <div class="skill">
             Rabbit MQ
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             Kubernetes
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
-            REST, gRPC
+            REST, JSON
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
-            JSON, XML, Proto 3
+            gRPC, Proto 3
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+          <div class="skill">
+            XML
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             Docker
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             MQTT, I2C
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             Windows 10 IoT
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             Raspberry Pi
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             Arduino
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             Linux
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
-            API Development
+            REST API Development
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <!-- Empty -->
           </div>
           <div class="skill">
             React Native
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
           </div>
           <div class="skill">
             Go Lang
+            <div class="dot-containers">
+              <div class="dot blue-dot"></div>
+              <div class="dot blue-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <!-- Empty -->
           </div>
         </div>
       </div>
@@ -370,8 +562,8 @@
       </div>
     </div>
     <div class="footer">
-      <div class="data-area">
-        <div class="col-md-12 vertical-center text-left">
+      <div class="data-area row">
+        <div class="col-md-6 vertical-center text-left">
           <div>
             <span class="firstname">
               Adarsh
@@ -384,7 +576,7 @@
             <span class="pointer" onclick="window.open('mailto://hello@adarshpradyut.in','_blank')">
               hello@adarshpradyut.in
             </span>
-            | +91 9962256589 | +91 7043160036
+            | +91 9962256589
           </p>
           <button onclick="window.open('https://www.linkedin.com/in/adarshpradyut/','_blank')"
             class="btn btn-light pointer">
@@ -408,6 +600,11 @@
             Last Updated on: 5th December 2020
           </p>
         </div>
+        <div class="col-md-6 text-right">
+          <img width="230px" height="230px" src="./static/Images/bot.png" />
+          <span class="bughunter">#BugHunter</span>
+        </div>
+
       </div>
     </div>
   </div>
