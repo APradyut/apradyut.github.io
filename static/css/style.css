@@ -7,10 +7,6 @@
   height: 100%;
 }
 
-.data-area {
-  margin: 20px 10%;
-}
-
 .pointerLink {
   cursor: pointer;
   color: #0066ff;
@@ -86,10 +82,9 @@
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: repeat(5, 30px);
-  grid-gap: 25px;
   justify-items: center;
-  width: 100%;
   margin: 10px;
+  row-gap: 25px;
 }
 .certification-container {
   display: grid;
@@ -191,6 +186,16 @@
   /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
+  }
+
+  .data-area {
+    margin: 20px !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .data-area {
+    margin: 20px 10%;
   }
 }
 
