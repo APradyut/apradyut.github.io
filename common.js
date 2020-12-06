@@ -1,5 +1,6 @@
 function documentOnload() {
   verifyCSSGrid();
+  displayDownloadResumeBtn(false);
 }
 function verifyCSSGrid() {
   // create a div (could also reuse a known element)
@@ -9,6 +10,12 @@ function verifyCSSGrid() {
   // add the output to the bucket
   if (!supports_grid) {
     alert("This browser is out dated and might not open the website properly");
+  }
+}
+function displayDownloadResumeBtn(showBtn) {
+  if (!showBtn) {
+    var downloadBtn = document.getElementById("downloadResumeBtn");
+    downloadBtn.classList.add("display-none");
   }
 }
 function downloadResume() {

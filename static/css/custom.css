@@ -187,3 +187,7 @@ button {
   top: 20px;
   z-index: 9999;
 }
+
+.display-none {
+  display: none;
+}
