@@ -108,7 +108,7 @@ h3 {
 .header-center-details {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(5, 64px);
+  grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
 }
 
@@ -156,6 +156,7 @@ button {
   display: grid;
   grid-template-rows: auto auto;
   justify-items: center;
+  align-items: center;
 }
 
 .aboutme-header-data {

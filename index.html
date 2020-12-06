@@ -12,18 +12,13 @@
   <meta name="description" content="Adarsh Pradyut - Online profile">
   <meta name="keywords" content="Adarsh Pradyut, Resume, APradyut">
   <meta name="author" content="Adarsh Pradyut">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body style="background-color: #d8d8d8" onload="documentOnload()">
   <div class="page">
-    <div class="download-resume-button">
-      <button onclick="downloadResume()" class="btn btn-light pointer">
-        <img height="30px" width="30px" src="./static/Images/download.png" />
-      </button>
-    </div>
-
     <div class="header">
-      <div class="data-area">
+      <div class="data-area data-area-mobile">
         <div class="header-data-area">
           <div class="header-center-details text-center">
             <div class="header-text">
@@ -77,7 +72,7 @@
       </div>
     </div>
     <div class="content">
-      <div class="data-area aboutme-header-data">
+      <div class="data-area data-area-mobile aboutme-header-data">
         <div class="profile-img-container vertical-center text-right">
           <img class="profile-img" src="./static/Images/profile-pic.jpg" />
         </div>
@@ -96,7 +91,7 @@
       </div>
     </div>
     <div class="content">
-      <div class="data-area">
+      <div class="data-area data-area-mobile">
         <div class="content-header">
           Articles
         </div>
@@ -129,7 +124,7 @@
       </div>
     </div>
     <div class="content">
-      <div class="data-area">
+      <div class="data-area data-area-mobile">
         <div class="content-header">
           Experience
         </div>
@@ -147,8 +142,8 @@
               </div>
 
               <div class="experience-desc">
-                Working as an R&D Engineer, I am involved in development and integration
-                of new technologies in the product.
+                I am working as R & D Engineer and have gained experience in the development & integration of new technologies like 
+                volume rendering and document engine.
               </div>
             </div>
           </div>
@@ -173,9 +168,8 @@
               </div>
 
               <div class="experience-desc">
-                I was involved in many security enhancements for the new tech stack
-                being developed in the organization. We worked on authenticating the incoming
-                requests and authorizing to access the resources.
+                I worked as a Product Engineer for 1 year 7 months.
+                I had an experience of working with technologies like WebAPI, Webhooks, VueJs, JWT, Microservices, AWS, Docker and Kubernetes.
               </div>
             </div>
           </div>
@@ -194,10 +188,8 @@
               </div>
 
               <div class="experience-desc">
-                Working as a Web Application Developer, my job was to structure
-                the backend procedures and create APIs for mobile apps and other
-                front-end web applications. I also later worked with the IoT
-                team.
+                I worked as a Web Application Developer. My role was to structure the backend procedures and create APIs for mobile apps 
+                and other front-end web applications. I also worked in the IoT team on contactless ticket vertification system.
               </div>
             </div>
           </div>
@@ -216,8 +208,7 @@
               </div>
 
               <div class="experience-desc">
-                Worked as the lead programmer in the team. My job was to develop
-                systems to, connect the vehicle with IoT devices to the pit for
+                I worked as the lead programmer . I developed systems to connect the vehicle with IoT devices to the pit for
                 real-time data logging, control and tracking.
               </div>
             </div>
@@ -237,9 +228,8 @@
               </div>
 
               <div class="experience-desc">
-                Internship in software development after the 4th Semester. My
-                project was to develop an in-house employee management and
-                attendance accounting system.
+                I worked as an Intern in software development after my 4th Semester. The project was to develop an in-house employee management 
+                and attendance accounting system.
               </div>
             </div>
           </div>
@@ -247,7 +237,7 @@
       </div>
     </div>
     <div class="content">
-      <div class="data-area">
+      <div class="data-area data-area-mobile">
         <div class="content-header">
           Technical Skills
         </div>
@@ -443,7 +433,7 @@
             </div>
           </div>
           <div class="skill">
-            REST API Development
+            REST API
             <div class="dot-containers">
               <div class="dot blue-dot"></div>
               <div class="dot blue-dot"></div>
@@ -451,9 +441,6 @@
               <div class="dot blue-dot"></div>
               <div class="dot blue-dot"></div>
             </div>
-          </div>
-          <div class="skill">
-            <!-- Empty -->
           </div>
           <div class="skill">
             React Native
@@ -475,14 +462,11 @@
               <div class="dot"></div>
             </div>
           </div>
-          <div class="skill">
-            <!-- Empty -->
-          </div>
         </div>
       </div>
     </div>
     <div class="content">
-      <div class="data-area">
+      <div class="data-area data-area-mobile">
         <div class="content-header">
           Certifications
         </div>
@@ -562,48 +546,67 @@
       </div>
     </div>
     <div class="footer">
-      <div class="data-area row">
-        <div class="col-md-8 vertical-center text-left">
-          <div>
-            <span class="firstname">
-              Adarsh
-            </span>
-            <span class="lastname">
-              Pradyut
-            </span>
+      <div class="data-area footer-content">
+        <div class="footer-links">
+          <div class="header-center-details footer-center-details text-center">
+            <div class="header-text">
+              <div>
+                <span class="firstname">
+                  Adarsh
+                </span>
+                <span class="lastname">
+                  Pradyut
+                </span>
+              </div>
+              <p>
+                <span class="pointer" onclick="window.open('mailto://hello@adarshpradyut.in','_blank')">
+                  hello@adarshpradyut.in
+                </span>
+                | +91 9962256589
+              </p>
+            </div>
+            <div>
+              <button onclick="window.open('https://medium.com/@adarsh.pradyut','_blank')"
+                class="btn btn-light pointer">
+                <img height="30px" width="30px" src="./static/Images/medium_logo.png" />
+              </button>
+            </div>
+            <div>
+              <button onclick="window.open('https://www.youtube.com/channel/UC6oqmFqlYhQ30t_885P8KZw','_blank')"
+                class="btn btn-light pointer">
+                <img height="30px" width="30px" src="./static/Images/youtube_logo.png" />
+              </button>
+            </div>
+            <div>
+              <button onclick="window.open('https://www.linkedin.com/in/adarshpradyut/','_blank')"
+                class="btn btn-light pointer">
+                <img height="30px" width="30px" src="./static/Images/linkedin.png" />
+              </button>
+            </div>
+            <div>
+              <button onclick="window.open('https://github.com/APradyut','_blank')" class="btn btn-light pointer">
+                <img height="30px" width="30px" src="./static/Images/github.png" />
+              </button>
+            </div>
+            <div>
+              <button onclick="window.open('https://www.nuget.org/packages?q=apradyut','_blank')"
+                class="btn btn-light pointer">
+                <img height="30px" width="30px" src="./static/Images/nuget.png" />
+              </button>
+            </div>
+
           </div>
-          <p>
-            <span class="pointer" onclick="window.open('mailto://hello@adarshpradyut.in','_blank')">
-              hello@adarshpradyut.in
-            </span>
-            | +91 9962256589
-          </p>
-          <button onclick="window.open('https://www.linkedin.com/in/adarshpradyut/','_blank')"
-            class="btn btn-light pointer">
-            <img height="30px" width="30px" src="./static/Images/linkedin.png" />
-          </button>
-          <button onclick="window.open('https://github.com/APradyut','_blank')" class="btn btn-light pointer">
-            <img height="30px" width="30px" src="./static/Images/github.png" />
-          </button>
-          <button onclick="window.open('https://www.nuget.org/packages?q=apradyut','_blank')"
-            class="btn btn-light pointer">
-            <img height="30px" width="30px" src="./static/Images/nuget.png" />
-          </button>
-          <button onclick="window.open('https://medium.com/@adarsh.pradyut','_blank')" class="btn btn-light pointer">
-            <img height="30px" width="30px" src="./static/Images/medium_logo.png" />
-          </button>
-          <button onclick="window.open('https://www.youtube.com/channel/UC6oqmFqlYhQ30t_885P8KZw','_blank')"
-            class="btn btn-light pointer">
-            <img height="30px" width="30px" src="./static/Images/youtube_logo.png" />
-          </button>
-          <p class="top-margin-30 small-text">
-            Last Updated on: 6th December 2020
-          </p>
+
         </div>
-        <div class="col-md-4 text-right">
+        <div class="text-right">
           <img width="230px" height="230px" src="./static/Images/bot.png" />
         </div>
-
+        <div class="download-resume-footer pointerLink" onclick="downloadResume()" class="btn btn-light pointer">
+          Download Resume
+        </div>
+        <div class="top-margin-30 small-text text-right">
+          Last Updated on: 6th December 2020
+        </div>
       </div>
     </div>
   </div>
