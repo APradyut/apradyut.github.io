@@ -1,6 +1,6 @@
 function documentOnload() {
   verifyCSSGrid();
-  displayDownloadResumeBtn(false);
+  displayDownloadResumeBtn(true);
 }
 function verifyCSSGrid() {
   // create a div (could also reuse a known element)
