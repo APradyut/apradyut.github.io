@@ -108,12 +108,12 @@ h3 {
 .header-center-details {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
 }
 
 .header-text {
-  grid-column: 1/6;
+  grid-column: 1/5;
 }
 
 .header-data-area {

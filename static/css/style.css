@@ -209,7 +209,7 @@
 }
 
 .footer-center-details {
-  grid-template-columns: repeat(5, 64px);
+  grid-template-columns: repeat(4, 80px);
 }
 
 @media (max-width: 600px) {
